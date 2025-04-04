@@ -998,7 +998,7 @@ function draw() {
     // Escalar imagen
     let imgW = QRImage.width;
     let imgH = QRImage.height;
-    let scaleFactor = min(width / imgW * 0.8, height / imgH * 0.8, 1);
+    let scaleFactor = min(width / imgW * 0.7, height / imgH * 0.7, 1);
     let newW = imgW * scaleFactor;
     let newH = imgH * scaleFactor;
 
@@ -1034,7 +1034,7 @@ function draw() {
         
       }
       
-      textSize(clampTextSize(width * 1.4));
+      textSize(width * 0.05);
       text(miURL, width / 2, imgY + newH / 2 + height * 0.04);
       
     } else {
