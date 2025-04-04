@@ -1011,11 +1011,11 @@ function draw() {
     if (height > width) {
       // VERTICAL
       let imgX = width / 2;
-      let imgY = height / 2.7;
+      let imgY = height / 2.9;
       image(QRImage, imgX, imgY, newW, newH);
 
       textSize(clampTextSize(width * 2.1));
-      text("Prueba en PC", width / 2, imgY - newH / 2 - height * 0.01);
+      text("Prueba en PC", width / 2, imgY - newH / 2 - height * 0.04);
       textSize(clampTextSize(width * 1));
       text("(Estos juegos se han creado específicamente", width / 2, imgY + newH / 2 + height * 0.11);
       text("para PC, introduce esta URL o escanea el código", width / 2, imgY + newH / 2 + height * 0.16);
