@@ -2778,6 +2778,31 @@ function draw() {
               ), ARROWDER.width*0.8, ARROWDER.height*0.8);
   
   MouseIndice = 0;
+
+    let maxSize = getMaxSketchSize();
+    let maxWidthsketch = maxSize.width.toFixed(2);
+  
+    let MovimientoEnX = map(mouseX, 0, maxWidthsketch, 0, width);
+    
+    let maxHeightsketch = maxSize.height.toFixed(2);
+  
+    let MovimientoEnY = map(mouseY, 0, maxHeightsketch, 0, height);
+    
+    if (dist(MovimientoEnX, MovimientoEnY, width*0.95, height*0.5 + map(
+                sin(frameCount * 0.04),
+                -1,
+                1,
+                6,
+                -6
+              )) <= ARROWDER.width*0.5) {
+      
+      cursor(HAND);
+      
+    } else {
+      
+      cursor(ARROW);
+      
+    }
     
   }
   
@@ -2974,5 +2999,40 @@ function mousePressed() {
         mensajeInicio = millis();
       });
   }
+  } else {
+    
+    let maxSize = getMaxSketchSize();
+    let maxWidthsketch = maxSize.width.toFixed(2);
+  
+    let MovimientoEnX = map(mouseX, 0, maxWidthsketch, 0, width);
+    
+    let maxHeightsketch = maxSize.height.toFixed(2);
+  
+    let MovimientoEnY = map(mouseY, 0, maxHeightsketch, 0, height);
+     
+    if (dist(MovimientoEnX, MovimientoEnY, width*0.85, height*0.5 + map(
+                sin(frameCount * 0.04),
+                -1,
+                1,
+                6,
+                -6
+              )) <= ARROWDER.width*1) {
+        
+      MouseIndice = 2;
+        
+    } else {
+      
+      MouseIndice = 1;
+      
+    } 
+    
   }
+}
+
+function getMaxSketchSize() {
+  let scaleFactor = Math.min(windowWidth / 1280, windowHeight / 720);
+  return {
+    width: 1280 * scaleFactor,
+    height: 720 * scaleFactor
+  };
 }
