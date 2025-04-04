@@ -1053,8 +1053,8 @@ function draw() {
         
       }
       
-      textSize(width * 0.06);
-      text(miURL, width / 1.6, height / 2); // A la derecha, centrado verticalmente
+      textSize(width * 0.04);
+      text(miURL, width * 0.7, height / 2); // A la derecha, centrado verticalmente
     }
 
     // Avanza la animación del color
