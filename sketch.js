@@ -1039,7 +1039,7 @@ function draw() {
       
     } else {
       // HORIZONTAL (landscape)
-      let imgX = width * 0.3; // Un poco a la izquierda
+      let imgX = width * 0.18; // Un poco a la izquierda
       let imgY = height * 0.45;
       image(QRImage, imgX, imgY, newW, newH);
 
