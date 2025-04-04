@@ -1016,11 +1016,11 @@ function draw() {
 
       textSize(width * 0.08);
       text("Prueba en PC", width / 2, height*0.05);
-      textSize(clampTextSize(width * 1.3));
+      textSize(width*0.04);
       text("(Estos juegos se han creado específicamente", width / 2, imgY + newH / 2 + height * 0.11);
       text("para PC, introduce esta URL o escanea el código", width / 2, imgY + newH / 2 + height * 0.16);
       text("QR para acceder a todos desde un ordenador)", width / 2, imgY + newH / 2 + height * 0.21);
-      textSize(clampTextSize(width * 1.7));
+      textSize(width*0.06);
       fill(250, 150, 150);
       text("Toca la pantalla para copiar la URL", width / 2, imgY + newH / 2 + height * 0.29);
       
