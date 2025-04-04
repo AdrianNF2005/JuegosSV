@@ -1014,13 +1014,13 @@ function draw() {
       let imgY = height / 2.9;
       image(QRImage, imgX, imgY, newW, newH);
 
-      textSize(clampTextSize(width * 2.3));
-      text("Prueba en PC", width / 2, height*0.2);
-      textSize(clampTextSize(width * 1.1));
+      textSize(clampTextSize(width * 3));
+      text("Prueba en PC", width / 2, height*0.1);
+      textSize(clampTextSize(width * 1.3));
       text("(Estos juegos se han creado específicamente", width / 2, imgY + newH / 2 + height * 0.11);
       text("para PC, introduce esta URL o escanea el código", width / 2, imgY + newH / 2 + height * 0.16);
       text("QR para acceder a todos desde un ordenador)", width / 2, imgY + newH / 2 + height * 0.21);
-      textSize(clampTextSize(width * 1.5));
+      textSize(clampTextSize(width * 1.7));
       fill(250, 150, 150);
       text("Toca la pantalla para copiar la URL", width / 2, imgY + newH / 2 + height * 0.29);
       
@@ -1034,7 +1034,7 @@ function draw() {
         
       }
       
-      textSize(clampTextSize(width * 1.26));
+      textSize(clampTextSize(width * 1.4));
       text(miURL, width / 2, imgY + newH / 2 + height * 0.04);
       
     } else {
