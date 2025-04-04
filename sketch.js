@@ -1014,7 +1014,7 @@ function draw() {
       let imgY = height / 2.9;
       image(QRImage, imgX, imgY, newW, newH);
 
-      textSize(clampTextSize(width * 3));
+      textSize(width * 0.08);
       text("Prueba en PC", width / 2, height*0.05);
       textSize(clampTextSize(width * 1.3));
       text("(Estos juegos se han creado específicamente", width / 2, imgY + newH / 2 + height * 0.11);
@@ -2938,10 +2938,6 @@ function mousePressed() {
 
 function isMobileDevice() {
   return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-}
-
-function clampTextSize(w) {
-  return constrain(w * 0.045, 16, 40); // Tamaño de texto adaptable
 }
 
 function mousePressed() {
