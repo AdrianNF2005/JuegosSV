@@ -2962,7 +2962,7 @@ function mousePressed() {
   if (navigator.share) {
     navigator.share({
       title: "Juegos SV",
-      text: "¡Prueba los juegos creados por Adrián!",
+      text: "¡Juega a todos los juegos de San Valero creados por AdriánNF y más usando el siguiente enlace!",
       url: miURL
     }).then(() => {
       console.log("Compartido con éxito");
