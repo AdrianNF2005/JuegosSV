@@ -1015,7 +1015,7 @@ function draw() {
       image(QRImage, imgX, imgY, newW, newH);
 
       textSize(clampTextSize(width * 2.1));
-      text("Prueba en PC", width / 2, imgY - newH / 2 - height * 0.1);
+      text("Prueba en PC", width / 2, imgY - newH / 2 - height * 0.01);
       textSize(clampTextSize(width * 1));
       text("(Estos juegos se han creado específicamente", width / 2, imgY + newH / 2 + height * 0.11);
       text("para PC, introduce esta URL o escanea el código", width / 2, imgY + newH / 2 + height * 0.16);
