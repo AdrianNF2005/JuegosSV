@@ -2978,6 +2978,5 @@ function mousePressed() {
         mensajeInicio = millis();
       });
   }
-
   }
 }
