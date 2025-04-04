@@ -1053,7 +1053,7 @@ function draw() {
         
       }
       
-      textSize(clampTextSize(width * 0.8));
+      textSize(width * 0.06);
       text(miURL, width / 1.6, height / 2); // A la derecha, centrado verticalmente
     }
 
