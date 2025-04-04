@@ -1064,19 +1064,6 @@ function draw() {
       colorIndex = (colorIndex + 1) % pastelColors.length;
     }
     
-      // Mostrar mensaje temporal de "URL copiada"
-  if (mostrarMensaje) {
-    let tiempoActual = millis();
-    if (tiempoActual - mensajeInicio < 3000) {
-      fill(255, 255, 255, map(sin(frameCount * 0.1), -1, 1, 100, 255)); // parpadeo suave
-      textSize(clampTextSize(width * 1.6));
-      text("URL copiada", width / 2, height / 2);
-    } else {
-      mostrarMensaje = false;
-    }
-  }
-
-    
   } else {
     
     if (URLOpened == false) {
